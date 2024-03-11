@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Press+Start+2P&family=Rubik+Vinyl&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;   
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(1, 10, 39);
+    color: #ededed;
+}
+
+.header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    animation: showLeft 1s ease forwards;
+    animation-delay: .4s;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .4s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: #00abf0;
+}
+
+.box{
+    position: relative;
+    color: #00abf0;
+    height: 20px;
+    padding: 100px 0 100px;
+    max-width: 85%;
+    text-align: center;
+    align-items: center;
+    display: inline-block;
+    padding-left: 15%;
+}
+
+.box p{
+    padding: 3rem;
+}
+
+.droga{
+    background: rgb(1, 12, 48);
+    border-style: double;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: #00abf0;
+}
